@@ -78,11 +78,6 @@ namespace collections
                 return current_node;
             }
 
-            void display_data()
-            {
-                display(this->root);
-            }
-
             void del(int key) override
             {
                 TreeNode<T>* current_node = find_node(this->root, key);
@@ -129,16 +124,6 @@ namespace collections
 
 
         private:
-
-            void display(TreeNode<T>* node)
-            {
-                if (node != nullptr)
-                {
-                    cout<<"Data : "<<node->get_data()<<endl;
-                    display(node->get_left_son());
-                    display(node->get_right_son());
-                }
-            }
 
             TreeNode<T>* find_node(TreeNode<T>* node, int key)
             {
