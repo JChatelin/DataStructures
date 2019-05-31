@@ -33,8 +33,6 @@ namespace collections
                 return node;
             }
 
-
-
             void insert(T data, int key) override
             {
                 TreeNode<T>* new_node = new TreeNode<T>(data);
@@ -91,7 +89,7 @@ namespace collections
                         this->transplant(current_node, current_node->get_left_son());
                     } else
                     {
-                        // Need to fixed the code here to make sure the functions runs properly
+                        // Need to fixe the code here to make sure the function runs properly
                         TreeNode<T>* mini = minimum(current_node->get_right_son());
                         if (mini->get_father() != current_node)
                         {
