@@ -12,12 +12,6 @@ namespace collections
         public:
             FowardList():BaseList<T>() {}
 
-            FowardList(FowardList<T>& obj)
-            {
-                this->begin = obj.begin;
-                this->end = obj.end;
-            }
-
             bool is_empty() override
             {
                 return this->begin == nullptr;

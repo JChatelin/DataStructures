@@ -11,11 +11,6 @@ namespace collections
     {
         public:
             List():BaseList<T>() {}
-            List(List& obj)
-            {
-                this->begin = obj.begin;
-                this->end = obj.end;
-            }
 
             bool is_empty() override
             {
