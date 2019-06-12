@@ -1,5 +1,5 @@
-#ifndef FOWARDLIST_H
-#define FOWARDLIST_H
+#ifndef FORWARDLIST_H
+#define FORWARDLIST_H
 
 #include "datastruct.h"
 #include "baselist.h"
@@ -151,4 +151,4 @@ namespace collections
     };
 }
 
-#endif // FOWARDLIST_H
+#endif // FORWARDLIST_H
