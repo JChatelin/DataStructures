@@ -7,10 +7,10 @@
 namespace collections
 {
     template <typename T>
-    class FowardList: public BaseList<T>, public DataStructBasicsFunc<T>
+    class ForwardList: public BaseList<T>, public DataStructBasicsFunc<T>
     {
         public:
-            FowardList():BaseList<T>() {}
+            ForwardList():BaseList<T>() {}
 
             bool is_empty() override
             {
